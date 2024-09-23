@@ -1,0 +1,14 @@
+D:\DSOO\ClubDeportivo\ClubDeportivo\bin\Debug\net8.0\ClubDeportivo.exe
+D:\DSOO\ClubDeportivo\ClubDeportivo\bin\Debug\net8.0\ClubDeportivo.deps.json
+D:\DSOO\ClubDeportivo\ClubDeportivo\bin\Debug\net8.0\ClubDeportivo.runtimeconfig.json
+D:\DSOO\ClubDeportivo\ClubDeportivo\bin\Debug\net8.0\ClubDeportivo.dll
+D:\DSOO\ClubDeportivo\ClubDeportivo\bin\Debug\net8.0\ClubDeportivo.pdb
+D:\DSOO\ClubDeportivo\ClubDeportivo\obj\Debug\net8.0\ClubDeportivo.GeneratedMSBuildEditorConfig.editorconfig
+D:\DSOO\ClubDeportivo\ClubDeportivo\obj\Debug\net8.0\ClubDeportivo.AssemblyInfoInputs.cache
+D:\DSOO\ClubDeportivo\ClubDeportivo\obj\Debug\net8.0\ClubDeportivo.AssemblyInfo.cs
+D:\DSOO\ClubDeportivo\ClubDeportivo\obj\Debug\net8.0\ClubDeportivo.csproj.CoreCompileInputs.cache
+D:\DSOO\ClubDeportivo\ClubDeportivo\obj\Debug\net8.0\ClubDeportivo.dll
+D:\DSOO\ClubDeportivo\ClubDeportivo\obj\Debug\net8.0\refint\ClubDeportivo.dll
+D:\DSOO\ClubDeportivo\ClubDeportivo\obj\Debug\net8.0\ClubDeportivo.pdb
+D:\DSOO\ClubDeportivo\ClubDeportivo\obj\Debug\net8.0\ClubDeportivo.genruntimeconfig.cache
+D:\DSOO\ClubDeportivo\ClubDeportivo\obj\Debug\net8.0\ref\ClubDeportivo.dll
