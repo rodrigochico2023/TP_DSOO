@@ -5,13 +5,11 @@ namespace ClubDeportivo
     internal class Actividad
     {
         // Atributos
-        
-        public int IdActividad { get; set; }  
-        public string Nombre { get; set; }  
-        public int CuposDisponibles { get; set; }  
+        public int IdActividad { get; set; }
+        public string Nombre { get; set; }
+        public int CuposDisponibles { get; set; }
 
         // Constructor
-        
         public Actividad(int idActividad, string nombre, int cuposDisponibles)
         {
             // Asignamos los valores recibidos como parámetros a las propiedades de la actividad.
@@ -21,7 +19,6 @@ namespace ClubDeportivo
         }
 
         // Método para reservar un cupo
-        
         public bool ReservarCupo()
         {
             // Verificamos si aún quedan cupos disponibles.
@@ -36,5 +33,3 @@ namespace ClubDeportivo
         }
     }
 }
-
-

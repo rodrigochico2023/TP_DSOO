@@ -10,7 +10,7 @@ namespace ClubDeportivo
         public List<Actividad> Actividades { get; set; }  // Almacena una lista de objetos de tipo 'Actividad'
 
         // Constructor
-       public ClubDeportivo()
+        public ClubDeportivo()
         {
             // Inicializamos las listas vacías cuando se crea un nuevo club.
             Socios = new List<Socio>();
@@ -18,11 +18,10 @@ namespace ClubDeportivo
         }
 
         // Método para dar de alta a un socio
-        
-        public void AltaSocio(int idSocio, string nombre, string apellido)
+        public void AltaSocio(string nombre, string apellido)
         {
             // Creamos un nuevo objeto de tipo 'Socio' y lo añadimos a la lista de socios.
-            Socios.Add(new Socio(idSocio, nombre, apellido));
+            Socios.Add(new Socio(nombre, apellido));
         }
 
         // Método para agregar una nueva actividad
@@ -42,19 +41,35 @@ namespace ClubDeportivo
             // Buscamos la actividad en la lista de actividades por el nombre
             Actividad actividad = Actividades.Find(a => a.Nombre == nombreActividad);
 
-            // Verificamos que el socio y la actividad existan, y que haya cupos disponibles en la actividad.
-            if (socio != null && actividad != null && actividad.ReservarCupo())
+            // Verificamos que el socio y la actividad existan
+            if (socio != null && actividad != null)
             {
-                // Añadimoa a la lista de inscripciones del socio
-                socio.Inscripciones.Add(actividad);
-                
-                Console.WriteLine($"El socio {socio.Nombre} se inscribió en {actividad.Nombre}.");
+                // Verificamos que el socio no esté inscrito en más de 3 actividades
+                if (socio.Inscripciones.Count >= 3)
+                {
+                    Console.WriteLine($"¡¡¡ ATENCIÓNNNN !!! El socio {socio.Nombre} completó el cupo de 3 actividades.");
+                    return;
+                }
+
+                // Verificamos que haya cupos disponibles en la actividad.
+                if (actividad.ReservarCupo())
+                {
+                    // Añadimos la actividad a la lista de inscripciones del socio
+                    socio.Inscripciones.Add(actividad);
+                    Console.WriteLine($"El socio {socio.Nombre} se inscribió en {actividad.Nombre}.");
+                }
+                else
+                {
+                    // Cupos agotados
+                    Console.WriteLine($"No se pudo inscribir al socio, {nombreActividad} , debido a que no hay cupos disponibles en esta actividad seleccionada.");
+                }
             }
             else
             {
-                // Cupos agotados o socio no encontrado
+                // Socio o actividad no encontrados
                 Console.WriteLine($"No se pudo inscribir al socio en la actividad {nombreActividad}.");
             }
         }
     }
 }
+
