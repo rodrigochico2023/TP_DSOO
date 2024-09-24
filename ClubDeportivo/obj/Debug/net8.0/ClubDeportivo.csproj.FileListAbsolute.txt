@@ -12,3 +12,4 @@ D:\DSOO\ClubDeportivo\ClubDeportivo\obj\Debug\net8.0\refint\ClubDeportivo.dll
 D:\DSOO\ClubDeportivo\ClubDeportivo\obj\Debug\net8.0\ClubDeportivo.pdb
 D:\DSOO\ClubDeportivo\ClubDeportivo\obj\Debug\net8.0\ClubDeportivo.genruntimeconfig.cache
 D:\DSOO\ClubDeportivo\ClubDeportivo\obj\Debug\net8.0\ref\ClubDeportivo.dll
+D:\DSOO\ClubDeportivo\ClubDeportivo\obj\Debug\net8.0\ClubDeportivo.sourcelink.json
